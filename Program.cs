@@ -14,7 +14,7 @@ namespace Auto_StckUpd_FA_4._5
     class Program
     {
         private static readonly HttpClient client;
-        private string connectionString = "Data Source=10.20.4.41;Connection Timeout=6000;Initial Catalog=Synapse_Prod;Persist Security Info=True;User ID=sa;Password=wcclg66Synapse; Integrated Security=False; TrustServerCertificate=True";
+        private string connectionString = "Data Source=10.20.4.41;Connection Timeout=6000;Initial Catalog=Synapse_Prod;Persist Security Info=True;User ID=synapsescheduler;Password=Syn@@pse@123; Integrated Security=False; TrustServerCertificate=True";
 
         static Program()
         {
@@ -139,6 +139,7 @@ namespace Auto_StckUpd_FA_4._5
                 };
 
                 Console.WriteLine(JsonConvert.SerializeObject(result));
+                Console.ReadLine();
             }
             catch (Exception ex)
             {
